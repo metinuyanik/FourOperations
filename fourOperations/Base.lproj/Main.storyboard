@@ -42,6 +42,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="+">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="additionClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Ge-UN-Li6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbB-KN-6Bz">
                                 <rect key="frame" x="212" y="221" width="45" height="45"/>
@@ -52,6 +55,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="*">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="multiplicationClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X0B-Hh-Tk2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXT-Ne-rxs">
                                 <rect key="frame" x="282" y="221" width="45" height="45"/>
@@ -59,6 +65,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="/">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="divisionClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iFw-gD-1A1"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38k-sl-gas">
                                 <rect key="frame" x="146" y="290" width="100" height="35"/>
@@ -79,6 +88,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="-">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="subtractionClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bwA-3L-Gfh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -105,6 +117,11 @@
                             <constraint firstItem="fOk-l2-9qg" firstAttribute="centerX" secondItem="38k-sl-gas" secondAttribute="centerX" id="zx5-jo-eSb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultsLabel" destination="38k-sl-gas" id="xuw-fx-uPJ"/>
+                        <outlet property="textOne" destination="dKK-CI-jUJ" id="xy0-Rj-cV9"/>
+                        <outlet property="textTwo" destination="fOk-l2-9qg" id="th0-LI-Fzt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
